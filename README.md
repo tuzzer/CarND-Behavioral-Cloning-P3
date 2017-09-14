@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 
 ---
 
@@ -13,9 +13,9 @@
 
 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 My overall strategy was to use a known architecture and 
 augment the data until the car was able to run one lap successfully.
@@ -41,7 +41,7 @@ Lastly, I added dropout layers to reduce the potential of over-fitting.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture model consists a convolutional neural network with 3x3 and 5x5 filter sizes
 and depths between 32 and 128 (steering_network.py lines 25-38). 
@@ -59,7 +59,7 @@ NVidia [[Source](https://devblogs.nvidia.com/parallelforall/deep-learning-self-d
 
 ![Nvidia CNN Architecture][nvidia-cnn]
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 I used the training data provided by Udacity for training the model. 
 In addition to the center lane data, 
