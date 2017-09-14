@@ -115,15 +115,15 @@ def data_generator(data_set, batch_size=64, add_noise=False):
 
             img = preprocess_image(img)
 
-            if add_noise and random.random() < 0.3:
+            if add_noise and random.random() < 1.0:
                 img = add_random_tint(img)
 
             if add_noise and random.random() < 0.5:
                 if -0.25 < angle < 0.25:
                     img, angle = flip_image(img, angle)
 
-            # cv2.imshow("img", img)
-            # cv2.waitKey(0)
+            cv2.imshow("img", img)
+            cv2.waitKey(0)
 
             X.append(img)
             y.append(angle)
