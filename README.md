@@ -10,6 +10,7 @@
 [drive-right]: doc_images/drive_right.jpg
 [processed-1]: doc_images/processed-image.PNG
 [processed-2]: doc_images/processed-image2.PNG
+[drive-gif]: doc_images/driving-video.gif
 
 
 
@@ -116,5 +117,8 @@ The validation set helped determine if the model was over-fitting or under-fitti
 The ideal number of epochs was 20 as I saw that the validation loss was no longer reducing.
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
+### 4. Video of Autonomous Driving
 
+![drive-gif]
 
+YouTube: https://youtu.be/xK5qdZyew6c
