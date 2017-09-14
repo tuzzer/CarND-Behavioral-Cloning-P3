@@ -29,6 +29,8 @@ def preprocess_image(img):
 
     # Crop the image to focus on the road
     processed_img = img[55:135, :, :]
+    # Convert the color to the one used to train the model
+    processed_img = cv2.cvtColor(processed_img, cv2.COLOR_RGB2BGR)
     # Blur the image
     processed_img = cv2.GaussianBlur(processed_img, (3, 3), 0)
     # scale to 64x64x3
